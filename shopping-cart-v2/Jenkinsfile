@@ -33,7 +33,6 @@ pipeline {
                         script: "./scripts/tag-exists-in-quay.sh $QUAY_USR/do400-recover latest",
                         returnStatus: true
                         )
-                    }
                     if (status != 0) {
                         error("Tag not found in Quay!")
                     }
