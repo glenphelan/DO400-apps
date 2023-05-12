@@ -18,7 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                oc start-build greeting-metrics --follow --wait -n hkqqrv-metrics
+                oc start-build greeting-metrics --follow --wait -n hjqqrv-metrics
                 '''
             }
         }
